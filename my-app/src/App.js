@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from "./Components/NavBar"
+import  NavBar  from "./Components/NavBar"
 import { BrowserRouter, Route } from "react-router-dom"
 import { Home } from "./Components/Home"
 import { Login } from "./Components/Login"
@@ -13,15 +13,13 @@ function App() {
   const [cocktails, setCocktails] = useState([])
 
 
-  useEffect(() => {
-      fetch("www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
-      .then(res => res.json())
-      .then(cocktailData => setCocktails(cocktailData))
-
-     
+  // useEffect(() => {
+  //     fetch("www.thecocktaildb.com/api/json/v1/1/search.php?f=a")
+  //     .then(res => res.json())
+  //     .then(cocktailData => console.log(cocktailData))
 
 
-  }, [])
+  // }, [])
 
   return (
     <div className="App">
@@ -36,6 +34,18 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
