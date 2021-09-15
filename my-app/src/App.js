@@ -5,6 +5,8 @@ import { Home } from "./Components/Home"
 import { Login } from "./Components/Login"
 import { Menu } from "./Components/Menu"
 import { useState, useEffect } from "react"
+import CocktailList from './Components/CocktailList'
+import CocktailContainer from "./Components/CocktailContainer"
 
 
 
@@ -12,14 +14,13 @@ function App() {
 
   const [cocktails, setCocktails] = useState([])
 
-
-  // useEffect(() => {
-  //     fetch("www.thecocktaildb.com/api/json/v1/1/search.php?f=a")
-  //     .then(res => res.json())
-  //     .then(cocktailData => console.log(cocktailData))
-
-
-  // }, [])
+  
+  useEffect(() => {
+    fetch("http://localhost:3000/cocktails")
+    .then(res => res.json())
+    .then(drinksData => setCocktails(drinksData))
+   
+  }, [])
 
   return (
     <div className="App">
@@ -29,57 +30,10 @@ function App() {
       <Route exact path="/Menu" components={Menu}/>
       <Route exact path="/Login" components={Login}/>
       </BrowserRouter>
+      <CocktailContainer cocktails={cocktails}/>
+      <CocktailList cocktails={cocktails}/>
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // import React from "react";
-// import { Route, Switch } from "react-router-dom";
-// import NavBar from "./NavBar";
-// import Home from "./Home";
-// import Actors from "./Actors";
-// import Directors from "./Directors";
-// import Movies from "./Movies";
-
-// function App() {
-//   return (
-//     <div>
-//       <NavBar />
-//       <Switch>
-//         <Route path="/movies">
-//           <Movies />
-//         </Route>
-//         <Route path="/directors">
-//           <Directors />
-//         </Route>
-//         <Route path="/actors">
-//           <Actors />
-//         </Route>
-//         <Route path="/">
-//           <Home />
-//         </Route>
-//       </Switch>
-//     </div>
-//   );
-// }
-
-
-// export default App;
-
