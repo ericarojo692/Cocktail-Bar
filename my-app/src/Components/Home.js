@@ -1,20 +1,18 @@
-import React from "react"
-import { useHistory } from "react-router-dom"
+import React from "react";
 
-export  const Home = () => {
-let history = useHistory()
-
-    return (
-            <div className="home-container">
-                <h2>
-                    Home Page that will contain Cocktail information 
-                </h2>
-                <h3 onclick={() => history.push("/cocktail")}> Click here for cocktail</h3>
-            </div>
-
-
-
-
-
-    )
+function Home() {
+  return( 
+    <div>
+    <h1>GabRica</h1>
+    <h2>Sponsors</h2>
+    <h3>Teremana</h3>
+    <img src="https://cdn.trendhunterstatic.com/thumbs/teremana-tequila.jpeg" width="200" height="200"/>
+    <h3>Titos</h3>
+    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/12/all-time-favorite-vodka-cocktail.jpg" width="200" height="200"/>
+    <h3>Hennesy</h3>
+    <img src="https://notablelife.com/media/2016/12/hennessey2.png" width="200" height="200"/>
+  </div>
+  )
 }
+
+export default Home;
