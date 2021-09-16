@@ -6,26 +6,39 @@ import { Login } from "./Components/Login"
 import  Menu  from "./Components/Menu"
 import { useState, useEffect } from "react"
 import CocktailList from './Components/CocktailList'
-import CocktailContainer from "./Components/CocktailContainer"
-
+import Search from "./Components/Search";
+import AddCocktailForm from "./Components/AddCocktailForm"
 
 
 function App() {
 
   const [cocktails, setCocktails] = useState([])
-
-
+  
   const renderNewCocktail = (newCocktail) => {
-        console.log(newCocktail)
         setCocktails([...cocktails, newCocktail])
   }
   
+
+const [isDeleted, setDeleted] = useState(false)
+
+
+
   useEffect(() => {
     fetch("http://localhost:3000/cocktails")
     .then(res => res.json())
     .then(drinksData => setCocktails(drinksData))
    
-  }, [])
+  }, [isDeleted])
+
+  function handleDeleteCocktail(e) {
+    fetch(`http://localhost:3000/cocktails/${e.target.id}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then((cocktail) => {
+        setDeleted(!isDeleted)
+      });
+  }
 
   return (
     <div className="App">
@@ -35,7 +48,14 @@ function App() {
         <Login />
         </Route>
         <Route path="/Menu">
-        <Menu cocktails={cocktails}/>
+        <Menu 
+        cocktails={cocktails} 
+       
+        handleDeleteCocktail = {handleDeleteCocktail}/>
+        <AddCocktailForm renderNewCocktail={renderNewCocktail}/>
+        
+        <CocktailList />
+       
         </Route>
         <Route path="/">
           <Home />

@@ -1,11 +1,11 @@
 import React from 'react';
-import CocktailContainer from './CocktailContainer';
+
 
 const CocktailList = ({ cocktails = [] }) => {
     return (
         <div>
-            <ul className="card">{cocktails.map(cocktail => <CocktailContainer cocktail={cocktail}/>)}</ul>
-            {/* {console.log(cocktails)} */}
+            <ul className="card">{cocktails.map(cocktail => cocktail)}</ul>
+           
         </div>
     )
 }

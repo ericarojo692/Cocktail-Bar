@@ -1,11 +1,17 @@
 import React from "react";
 
-function newCocktail({ renderNewCocktail }) {
+function AddCocktailForm({ renderNewCocktail }) {
+
+    function handleDeleteClick() {
+       
+      }
+
 
         const handleSubmit = (e) => {
-            console.log(e.target)
-            console.log(e.target.image.value)
-            fetch("http:/localhost:3000/cocktails", {
+                e.preventDefault()
+           
+
+            fetch("http://localhost:3000/cocktails", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -16,15 +22,12 @@ function newCocktail({ renderNewCocktail }) {
                     price: e.target.price.value
 
                 })
-
             })
             .then(res => res.json())
             .then(newCocktail => renderNewCocktail(newCocktail))
-        }
-
-
-
-        return(
+          }
+        
+        return (
             <div className="new-cocktail-form">
                 <h2>New Cocktail</h2>
                 <form onSubmit={(e) => handleSubmit(e)}>
@@ -32,6 +35,7 @@ function newCocktail({ renderNewCocktail }) {
                     <input type="text" name="image" placeholder="Image URL" />
                     <input type="number" name="price" placeholder="Cocktail Price" />
                     <button type="submit">Add Cocktail</button>
+                    <button className="del-btn" onClick={handleDeleteClick}> Delete </button>
                 </form>
             </div>
         );

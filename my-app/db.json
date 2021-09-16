@@ -1,48 +1,106 @@
 {
-"cocktails": [
-  {
-    "id": 1,
-    "name": "Rum & Coke",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190904-rum-and-coke-0345-landscape-pf-1568846706.jpg",
-    "price": 15.99
-  },
-  {
-    "id": 2,
-    "name": "Margarita",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/margarita-1592951298.jpg?crop=1xw:1xh;center,top&resize=980:*",
-    "price": 25.98
-  },
-  {
-    "id": 3,
-    "name": "Gin & Tonic",
-    "image": "https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1600228574/cms_recipe_featured_image/edes6ifhq2adywqq1t4w.jpg",
-    "price": 5.99
-  },
-  {
-    "id": 4,
-    "name": "Moscow Mule",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/moscow-mule-1592951361.jpg?crop=1xw:1xh;center,top&resize=980:*",
-    "price": 12.11
-  },
-  {
-    "id": 5,
-    "name": "Old Fashioned",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/old-fashioned-1592951230.jpg?crop=1xw:1xh;center,top&resize=980:*",
-    "price": 10.37
-  },
-  {
-    "id": 6,
-    "name": "Cosmopolitan",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cosmopolitan-1592951320.jpg?crop=1xw:1xh;center,top&resize=980:*",
-    "price": 25.99
-  },
-  {
-    "id": 7,
-    "name": "Mojito",
-    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mojito-1592951385.jpg?crop=1xw:1xh;center,top&resize=980:*",
-    "price": 55
-  }
-]
+  "cocktails": [
+    {
+      "id": 1,
+      "name": "Rum & Coke",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190904-rum-and-coke-0345-landscape-pf-1568846706.jpg",
+      "price": 9.99
+    },
+    {
+      "id": 2,
+      "name": "Margarita",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/margarita-1592951298.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": 15.98
+    },
+    {
+      "id": 3,
+      "name": "Gin & Tonic",
+      "image": "https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1600228574/cms_recipe_featured_image/edes6ifhq2adywqq1t4w.jpg",
+      "price": 15.99
+    },
+    {
+      "id": 5,
+      "name": "Old Charles Fashion",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/old-fashioned-1592951230.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": 10.37
+    },
+    {
+      "id": 6,
+      "name": "Cosmopolitan",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cosmopolitan-1592951320.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": 15.99
+    },
+    {
+      "name": "Negroni",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-1592951342.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "13.99",
+      "id": 7
+    },
+    {
+      "name": "Queen Natalie",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/martini-1592951711.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "18.99",
+      "id": 8
+    },
+    {
+      "name": "Tarrica Love",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/milano-spritzer-1593008325.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "1.99",
+      "id": 9
+    },
+    {
+      "name": "Aloha Shawna",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pimms-cup-1592951518.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "14",
+      "id": 10
+    },
+    {
+      "name": "Angeloma",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/paloma-1592951544.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "7",
+      "id": 11
+    },
+    {
+      "name": "The Jaelip",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mint-julep-1592951594.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "12",
+      "id": 12
+    },
+    {
+      "name": "Funkcar",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sidecar-1592951563.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "14",
+      "id": 13
+    },
+    {
+      "name": "Joe Mama",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-classic-tomcollins-1623102545.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "11",
+      "id": 14
+    },
+    {
+      "name": "Classic Tina",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tc-classic-vesper-1623102546.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "16",
+      "id": 15
+    },
+    {
+      "name": "Gabriellet",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gimlet-1592951479.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "15",
+      "id": 16
+    },
+    {
+      "name": "Rojo's Manhattan",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/manhattan-1592951428.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "23",
+      "id": 17
+    },
+    {
+      "name": "Strider Sour",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/whiskey-sour-1592951408.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "55",
+      "id": 18
+    }
+  ]
 }
-
-
