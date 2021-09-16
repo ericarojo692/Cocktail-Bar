@@ -1,0 +1,48 @@
+{
+"cocktails": [
+  {
+    "id": 1,
+    "name": "Rum & Coke",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190904-rum-and-coke-0345-landscape-pf-1568846706.jpg",
+    "price": 15.99
+  },
+  {
+    "id": 2,
+    "name": "Margarita",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/margarita-1592951298.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": 25.98
+  },
+  {
+    "id": 3,
+    "name": "Gin & Tonic",
+    "image": "https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1600228574/cms_recipe_featured_image/edes6ifhq2adywqq1t4w.jpg",
+    "price": 5.99
+  },
+  {
+    "id": 4,
+    "name": "Moscow Mule",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/moscow-mule-1592951361.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": 12.11
+  },
+  {
+    "id": 5,
+    "name": "Old Fashioned",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/old-fashioned-1592951230.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": 10.37
+  },
+  {
+    "id": 6,
+    "name": "Cosmopolitan",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cosmopolitan-1592951320.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": 25.99
+  },
+  {
+    "id": 7,
+    "name": "Mojito",
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mojito-1592951385.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": 55
+  }
+]
+}
+
+

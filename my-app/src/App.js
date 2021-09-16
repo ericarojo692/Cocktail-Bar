@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import  NavBar  from "./Components/NavBar"
+import { Route, Switch } from "react-router-dom"
+import  Home  from "./Components/Home"
+import { Login } from "./Components/Login"
+import  Menu  from "./Components/Menu"
+import { useState, useEffect } from "react"
+import CocktailList from './Components/CocktailList'
+import CocktailContainer from "./Components/CocktailContainer"
+
+
 
 function App() {
+
+  const [cocktails, setCocktails] = useState([])
+
+
+  const renderNewCocktail = (newCocktail) => {
+        console.log(newCocktail)
+        setCocktails([...cocktails, newCocktail])
+  }
+  
+  useEffect(() => {
+    fetch("http://localhost:3000/cocktails")
+    .then(res => res.json())
+    .then(drinksData => setCocktails(drinksData))
+   
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <NavBar />
+      <Switch>
+        <Route path="/Login">
+        <Login />
+        </Route>
+        <Route path="/Menu">
+        <Menu cocktails={cocktails}/>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
