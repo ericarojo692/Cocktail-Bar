@@ -1,12 +1,6 @@
 {
   "cocktails": [
     {
-      "id": 1,
-      "name": "Rum & Coke",
-      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190904-rum-and-coke-0345-landscape-pf-1568846706.jpg",
-      "price": 9.99
-    },
-    {
       "id": 2,
       "name": "Margarita",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/margarita-1592951298.jpg?crop=1xw:1xh;center,top&resize=980:*",
@@ -45,7 +39,7 @@
     {
       "name": "Tarrica Love",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/milano-spritzer-1593008325.jpg?crop=1xw:1xh;center,top&resize=980:*",
-      "price": "1.99",
+      "price": "199.99",
       "id": 9
     },
     {

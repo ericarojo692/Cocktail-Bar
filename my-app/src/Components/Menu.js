@@ -21,7 +21,7 @@ function Menu({ cocktails, handleDeleteCocktail }) {
         <h2>{cocktail.name}</h2>
         <img src={cocktail.image} width="300" height="300"/>
         <h3>${cocktail.price}</h3>
-        <button onClick={handleDeleteCocktail} id={cocktail.id}>Delete</button> 
+        <button className="deletebttn" onClick={handleDeleteCocktail} id={cocktail.id}>Delete</button> 
         
     </div>
   ))
