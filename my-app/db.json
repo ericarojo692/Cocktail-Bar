@@ -19,12 +19,6 @@
       "price": 10.37
     },
     {
-      "id": 6,
-      "name": "Cosmopolitan",
-      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cosmopolitan-1592951320.jpg?crop=1xw:1xh;center,top&resize=980:*",
-      "price": 15.99
-    },
-    {
       "name": "Negroni",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-1592951342.jpg?crop=1xw:1xh;center,top&resize=980:*",
       "price": "13.99",
@@ -95,6 +89,12 @@
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/whiskey-sour-1592951408.jpg?crop=1xw:1xh;center,top&resize=980:*",
       "price": "55",
       "id": 18
+    },
+    {
+      "name": "Mimosa",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mimosa-1592951449.jpg?crop=1xw:1xh;center,top&resize=980:*",
+      "price": "10",
+      "id": 19
     }
   ]
 }
